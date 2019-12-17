@@ -126,8 +126,8 @@ def rename_mission(request):
 
 
 def get_mission_info(request):
-    mission_id = request.POST.get('id')
-    # mission_id = 4
+    # mission_id = request.POST.get('id')
+    mission_id = 4
     cur_mission = Mission.objects.get(id=mission_id)
     cur_image_path = cur_mission.image_path
     cur_detect_path = cur_mission.detect_path
