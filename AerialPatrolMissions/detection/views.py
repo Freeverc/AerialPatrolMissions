@@ -82,7 +82,7 @@ def get_all_missions(request):
 def create_mission(request):
     name = request.POST.get('name')
     # info = request.POST.get('info')
-    parent_id = request.POST.get('parent_id')
+    parent_id = request.POST.get('parent-id')
 
     # parent = request.POST.get('parent')
     # children = request.POST.get('children')
@@ -93,6 +93,7 @@ def create_mission(request):
     # children = []
     # children_id = 8
     print("name: ", name)
+    print("parent_id: ", parent_id)
 
     new_mission = Mission(
         name=name,
