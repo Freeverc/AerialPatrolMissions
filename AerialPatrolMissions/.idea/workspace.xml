@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ce7d234-bd43-4742-9a59-0c5e83a312a3" name="Default Changelist" comment="add">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detection/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/detection/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detection/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/detection/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +102,7 @@
       <updated>1576534237841</updated>
       <workItem from="1576534240995" duration="22509000" />
       <workItem from="1576582976302" duration="2177000" />
-      <workItem from="1576589493490" duration="2753000" />
+      <workItem from="1576589493490" duration="3346000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1576590194098</created>
@@ -119,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576591483214</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add">
+      <created>1576592478236</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576592478236</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
