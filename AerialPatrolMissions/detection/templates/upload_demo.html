@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FreevercBlogTest</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class = "container page-header">
+        <h1>航拍图像工程预警检测系统<small>------{{ app_function }}</small> </h1>
+    </div>
+    <div class = "container page-body">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div> <h4>请选择要检测的航拍图片：</h4><input type="file" name="img" multiple="multiple"></div>
+            <p>   </p>
+            <button type="submit">上传并检测</button>
+            <div> <h4>可检测的类别：</h4></div>
+            {% for name in class_names %}
+                <p>     {{ name }}</p>
+            {% endfor %}
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <a href="/static/input.jpg" class="thumbnail">
+                <p>输入图像</p>
+                {% load static %}
+{#                <img src={{ upload_path }}  width="600px" height="400px" title="输入图像" >#}
+                <img src="{% static "input.jpg" %}" width="800px" height="600px" title="输入图像" >
+            </a>
+        </div>
+        <div class="col-md-6">
+            <a href="/static/output.jpg" class="thumbnail">
+                <p>输出图像</p>
+                {% load static %}
+                <img src="{% static "output.jpg" %}" width="800px" height="600px" title="输出图像" >
+            </a>
+        </div>
+</div>
+</body>
+</html>
