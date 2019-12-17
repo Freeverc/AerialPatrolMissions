@@ -80,23 +80,23 @@ def get_all_missions(request):
 
 
 def create_mission(request):
-    # name = request.POST.get('name')
+    name = request.POST.get('name')
     # info = request.POST.get('info')
-    # parent_id = request.POST.get('parent_id')
+    parent_id = request.POST.get('parent_id')
 
     # parent = request.POST.get('parent')
     # children = request.POST.get('children')
-    name = 'name'
-    info = 'info'
+    # name = 'name'
+    # info = 'info'
     # parent = ROOT_NODE
-    parent_id = 1
+    # parent_id = 1
     # children = []
     # children_id = 8
     print("name: ", name)
 
     new_mission = Mission(
         name=name,
-        info=info,
+        # info=info,
         # parent=parent,
         parent_id=parent_id,
         # children=children, # can not assign a value
