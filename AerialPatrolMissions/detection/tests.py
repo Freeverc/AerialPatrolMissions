@@ -1,7 +1,6 @@
 from django.test import TestCase
 
 # Create your tests here.
-
 from .models import Image, Mission
 from django.conf import settings
 import os
